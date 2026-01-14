@@ -95,15 +95,15 @@ const ContactForm: React.FC = () => {
           {/* Left Text */}
           <div className="lg:w-1/2 text-white">
             <h2 className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight">
-              Get Your Free <br />
-              <span className="text-brand-accent">Case Evaluation</span> Today
+              Claim Your Free <br />
+              <span className="text-brand-accent">Replacement Vehicle</span>
             </h2>
             <p className="text-gray-300 text-lg mb-8 leading-relaxed">
-              Time is critical in accident claims. The sooner you file, the better your chances of securing a maximum settlement.
+              Non-fault accident? You're legally entitled to a like-for-like courtesy car. We handle all the paperwork – the at-fault insurer pays, not you.
             </p>
 
             <div className="space-y-4 mb-10">
-              {['Confidential Review', 'No Obligation', 'Immediate Assistance'].map((item, i) => (
+              {['No Cost To You', 'No Impact On No-Claims Bonus', 'Delivered Within 24-48 Hours'].map((item, i) => (
                 <div key={i} className="flex items-center gap-3">
                   <div className="w-6 h-6 rounded-full bg-brand-primary/20 flex items-center justify-center border border-brand-primary/50">
                     <Check className="w-3 h-3 text-brand-primary" />
@@ -129,7 +129,7 @@ const ContactForm: React.FC = () => {
             <div className="bg-white rounded-3xl p-8 md:p-10 shadow-2xl">
               <div className="mb-8">
                 <h3 className="text-2xl font-bold text-brand-dark mb-2">Check Your Eligibility</h3>
-                <p className="text-brand-gray text-sm">Fill out the form below to get started.</p>
+                <p className="text-brand-gray text-sm">Fill out the form below to see if you qualify for a free replacement vehicle.</p>
               </div>
 
               {/* Success Message */}
@@ -175,7 +175,7 @@ const ContactForm: React.FC = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-brand-primary focus:border-transparent outline-none transition-all font-medium text-brand-dark placeholder-gray-400"
-                      placeholder="(555) 000-0000"
+                      placeholder="07xxx xxxxxx"
                       required
                     />
                   </div>
@@ -201,7 +201,7 @@ const ContactForm: React.FC = () => {
                     onChange={handleChange}
                     rows={3}
                     className="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-brand-primary focus:border-transparent outline-none transition-all font-medium text-brand-dark placeholder-gray-400 resize-none"
-                    placeholder="Briefly tell us what happened..."
+                    placeholder="When did the accident happen? Who was at fault?"
                   ></textarea>
                 </div>
 

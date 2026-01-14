@@ -40,29 +40,29 @@ const Hero: React.FC = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-primary"></span>
               </span>
-              #1 Rated Claim Assistance
+              UK's Trusted Credit Hire Specialists
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-brand-dark leading-[1.1] mb-6 tracking-tight">
-              Maximum Settlement. <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-blue-400">Minimum Stress.</span>
+              Free Replacement Car. <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-blue-400">No Excess. No Catch.</span>
             </h1>
 
             <p className="text-lg md:text-xl text-brand-gray mb-10 max-w-lg leading-relaxed">
-              Don't fight insurance companies alone. We connect you with top legal experts to ensure you get paid for repairs, injuries, and lost wages.
+              Non-fault accident? Under UK law, you're entitled to a like-for-like replacement vehicle at no cost. The at-fault insurer pays – not you. We handle everything.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <div onClick={() => scrollToSection('contact')}>
                   <Button variant="accent" className="shadow-orange-500/20 px-8 py-4 text-base w-full sm:w-auto cursor-pointer">
-                    Get Free Case Review
+                    Get Your Free Car
                     <ArrowRight className="w-5 h-5" />
                   </Button>
                 </div>
                 <div onClick={() => scrollToSection('how-it-works')}>
                   <Button variant="white" className="px-8 py-4 text-base w-full sm:w-auto cursor-pointer">
-                    How It Works
+                    How Credit Hire Works
                   </Button>
                 </div>
               </div>
@@ -71,12 +71,12 @@ const Hero: React.FC = () => {
             <div className="flex items-center gap-6 text-sm font-medium text-brand-dark/80">
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-green-500" />
-                <span>No Win, No Fee</span>
+                <span>100% Free Service</span>
               </div>
               <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-green-500" />
-                <span>Free Consultation</span>
+                <span>Like-for-Like Vehicle</span>
               </div>
             </div>
           </div>
@@ -87,8 +87,8 @@ const Hero: React.FC = () => {
               {/* Main Image Card */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white transform hover:scale-[1.02] transition-transform duration-500 z-10">
                 <img
-                  src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&q=80&w=800"
-                  alt="Professional consultant helping client"
+                  src="/images/hero-car-delivery.png"
+                  alt="Customer receiving keys for replacement vehicle"
                   className="w-full h-auto object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent"></div>
@@ -100,9 +100,9 @@ const Hero: React.FC = () => {
                         <Star key={i} className="w-4 h-4 fill-current" />
                       ))}
                     </div>
-                    <span className="text-sm font-medium opacity-90">5.0/5.0 Rating</span>
+                    <span className="text-sm font-medium opacity-90">Excellent Service</span>
                   </div>
-                  <p className="font-bold text-lg">"They helped me get 3x what the insurance offered."</p>
+                  <p className="font-bold text-lg">"Had my replacement car within 24 hours!"</p>
                 </div>
               </div>
 
@@ -110,11 +110,11 @@ const Hero: React.FC = () => {
               <div className="absolute -top-12 -right-8 bg-white p-6 rounded-2xl shadow-xl border border-gray-50 z-20 animate-bounce-slow hidden md:block">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-600">
-                    <span className="font-bold text-lg">$</span>
+                    <span className="font-bold text-lg">✓</span>
                   </div>
                   <div>
-                    <p className="text-xs text-gray-500 uppercase tracking-wider font-bold">Avg. Recovery</p>
-                    <p className="text-2xl font-bold text-brand-dark">$45,000+</p>
+                    <p className="text-xs text-gray-500 uppercase tracking-wider font-bold">UK Claims/Year</p>
+                    <p className="text-2xl font-bold text-brand-dark">500,000+</p>
                   </div>
                 </div>
               </div>
