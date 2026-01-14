@@ -1,13 +1,33 @@
 import React from 'react';
 import { Shield, Phone, Mail, MapPin } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 const Footer: React.FC = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const scrollToSection = (id: string) => {
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <footer className="bg-brand-dark text-white pt-20 pb-10 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          
+
           {/* Brand Column */}
           <div className="col-span-1 lg:col-span-2">
             <div className="flex items-center gap-2 mb-6">
@@ -24,8 +44,8 @@ const Footer: React.FC = () => {
             <h4 className="font-bold text-lg mb-6 text-white">Company</h4>
             <ul className="space-y-4">
               <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
-              <li><a href="/#how-it-works" className="text-gray-400 hover:text-white transition-colors">Process</a></li>
-              <li><a href="/#features" className="text-gray-400 hover:text-white transition-colors">Benefits</a></li>
+              <li><button onClick={() => scrollToSection('how-it-works')} className="text-gray-400 hover:text-white transition-colors bg-transparent border-none cursor-pointer">Process</button></li>
+              <li><button onClick={() => scrollToSection('features')} className="text-gray-400 hover:text-white transition-colors bg-transparent border-none cursor-pointer">Benefits</button></li>
               <li><Link to="/terms" className="text-gray-400 hover:text-white transition-colors">Terms of Service</Link></li>
               <li><Link to="/privacy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</Link></li>
             </ul>

@@ -1,11 +1,31 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, Menu, X, Shield } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Button from './Button';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleNavClick = (id: string) => {
+    setIsOpen(false);
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,8 +52,8 @@ const Navbar: React.FC = () => {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/" className="text-brand-gray hover:text-brand-primary font-medium transition-colors text-sm">Home</Link>
-            <a href="/#how-it-works" className="text-brand-gray hover:text-brand-primary font-medium transition-colors text-sm">How It Works</a>
-            <a href="/#features" className="text-brand-gray hover:text-brand-primary font-medium transition-colors text-sm">Benefits</a>
+            <button onClick={() => handleNavClick('how-it-works')} className="text-brand-gray hover:text-brand-primary font-medium transition-colors text-sm bg-transparent border-none cursor-pointer">How It Works</button>
+            <button onClick={() => handleNavClick('features')} className="text-brand-gray hover:text-brand-primary font-medium transition-colors text-sm bg-transparent border-none cursor-pointer">Benefits</button>
 
             <div className="h-6 w-px bg-gray-200"></div>
 
@@ -42,11 +62,11 @@ const Navbar: React.FC = () => {
                 <Phone className="w-4 h-4" />
                 <span>888.408.0938</span>
               </a>
-              <a href="/#contact">
-                <Button variant="accent" className="!py-2 !px-5 text-xs">
+              <div onClick={() => handleNavClick('contact')}>
+                <Button variant="accent" className="!py-2 !px-5 text-xs cursor-pointer">
                   Free Case Review
                 </Button>
-              </a>
+              </div>
             </div>
           </div>
 
@@ -67,14 +87,14 @@ const Navbar: React.FC = () => {
         <div className="md:hidden bg-white absolute w-full shadow-xl border-t border-gray-100">
           <div className="px-4 pt-4 pb-8 space-y-4">
             <Link to="/" onClick={() => setIsOpen(false)} className="block px-4 py-3 text-base font-medium text-brand-dark hover:bg-brand-light rounded-xl transition-colors">Home</Link>
-            <a href="/#how-it-works" onClick={() => setIsOpen(false)} className="block px-4 py-3 text-base font-medium text-brand-dark hover:bg-brand-light rounded-xl transition-colors">How It Works</a>
-            <a href="/#features" onClick={() => setIsOpen(false)} className="block px-4 py-3 text-base font-medium text-brand-dark hover:bg-brand-light rounded-xl transition-colors">Benefits</a>
+            <button onClick={() => handleNavClick('how-it-works')} className="block w-full text-left px-4 py-3 text-base font-medium text-brand-dark hover:bg-brand-light rounded-xl transition-colors bg-transparent border-none">How It Works</button>
+            <button onClick={() => handleNavClick('features')} className="block w-full text-left px-4 py-3 text-base font-medium text-brand-dark hover:bg-brand-light rounded-xl transition-colors bg-transparent border-none">Benefits</button>
             <div className="pt-4 border-t border-gray-100 space-y-3">
-              <a href="/#contact" onClick={() => setIsOpen(false)}>
+              <div onClick={() => handleNavClick('contact')}>
                 <Button fullWidth variant="accent">
                   Get Free Case Review
                 </Button>
-              </a>
+              </div>
               <a href="tel:8884080938" onClick={() => setIsOpen(false)}>
                 <Button fullWidth variant="primary">
                   Call: 888.408.0938
