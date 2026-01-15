@@ -82,7 +82,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-brand-dark relative overflow-hidden">
+    <section id="contact" className="py-16 md:py-24 bg-brand-dark relative overflow-hidden">
       {/* Background patterns */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20">
         <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-brand-primary rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2"></div>
@@ -95,15 +95,15 @@ const ContactForm: React.FC = () => {
           {/* Left Text */}
           <div className="lg:w-1/2 text-white">
             <h2 className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight">
-              Claim Your Free <br />
-              <span className="text-brand-accent">Replacement Vehicle</span>
+              Start Your <br />
+              <span className="text-brand-accent">Stress-Free Claim Today</span>
             </h2>
             <p className="text-gray-300 text-lg mb-8 leading-relaxed">
-              Non-fault accident? You're legally entitled to a like-for-like courtesy car. We handle all the paperwork – the at-fault insurer pays, not you.
+              Don't let a non-fault accident disrupt your life. We provide immediate support and a comparable replacement vehicle at no cost to you.
             </p>
 
             <div className="space-y-4 mb-10">
-              {['No Cost To You', 'No Impact On No-Claims Bonus', 'Delivered Within 24-48 Hours'].map((item, i) => (
+              {['100% Non-Fault Claim Support', 'Protect Your No-Claims Bonus', 'Same-Day Vehicle Arrangement'].map((item, i) => (
                 <div key={i} className="flex items-center gap-3">
                   <div className="w-6 h-6 rounded-full bg-brand-primary/20 flex items-center justify-center border border-brand-primary/50">
                     <Check className="w-3 h-3 text-brand-primary" />
@@ -128,8 +128,8 @@ const ContactForm: React.FC = () => {
           <div className="lg:w-1/2 w-full">
             <div className="bg-white rounded-3xl p-8 md:p-10 shadow-2xl">
               <div className="mb-8">
-                <h3 className="text-2xl font-bold text-brand-dark mb-2">Check Your Eligibility</h3>
-                <p className="text-brand-gray text-sm">Fill out the form below to see if you qualify for a free replacement vehicle.</p>
+                <h3 className="text-2xl font-bold text-brand-dark mb-2">Confirm Your Eligibility Instantly</h3>
+                <p className="text-brand-gray text-sm">Enter your details below for immediate assistance from our expert team.</p>
               </div>
 
               {/* Success Message */}
@@ -218,7 +218,7 @@ const ContactForm: React.FC = () => {
                   {isSubmitting ? (
                     <>Submitting...</>
                   ) : (
-                    <>Get Free Review <ArrowRight className="w-5 h-5" /></>
+                    <>Start Free Claim <ArrowRight className="w-5 h-5" /></>
                   )}
                 </Button>
 

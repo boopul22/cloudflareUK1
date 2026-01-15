@@ -1,8 +1,7 @@
 import React from 'react';
 import Hero from './Hero';
 import StatsBanner from './StatsBanner';
-import Features from './Features';
-import HowItWorks from './HowItWorks';
+import FAQ from './FAQ';
 import ContactForm from './ContactForm';
 import FinalCTA from './FinalCTA';
 
@@ -11,8 +10,7 @@ const Home: React.FC = () => {
     <>
       <Hero />
       <StatsBanner />
-      <Features />
-      <HowItWorks />
+      <FAQ />
       <ContactForm />
       <FinalCTA />
     </>

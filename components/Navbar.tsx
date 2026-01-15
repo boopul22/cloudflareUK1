@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
             <div className={`p-2 rounded-xl transition-colors ${scrolled ? 'bg-brand-primary/10' : 'bg-white/20'}`}>
               <Shield className={`h-6 w-6 ${scrolled ? 'text-brand-primary' : 'text-brand-dark'}`} fill="currentColor" fillOpacity={0.2} />
             </div>
-            <span className="font-extrabold text-xl tracking-tight text-brand-dark">
+            <span className="font-extrabold text-lg sm:text-xl tracking-tight text-brand-dark">
               Online Motor <span className="text-brand-primary">Claims</span>
             </span>
           </Link>

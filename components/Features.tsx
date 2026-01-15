@@ -4,7 +4,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import Button from './Button';
 
 const FeatureCard: React.FC<{ icon: React.ElementType, title: string, description: string, color: string }> = ({ icon: Icon, title, description, color }) => (
-  <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-card hover:shadow-xl transition-all duration-300 group">
+  <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-card hover:shadow-xl transition-all duration-300 group">
     <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-colors duration-300 ${color} group-hover:scale-110 transform`}>
       <Icon className="w-7 h-7" />
     </div>
@@ -35,7 +35,7 @@ const Features: React.FC = () => {
   };
 
   return (
-    <section id="features" className="py-24 bg-white relative overflow-hidden">
+    <section id="features" className="py-16 md:py-24 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-brand-primary font-bold text-sm uppercase tracking-wider mb-3">Your Legal Right</h2>
