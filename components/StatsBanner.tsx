@@ -45,8 +45,8 @@ const StatsBanner: React.FC = () => {
                 <ShieldCheck className="w-8 h-8 md:w-8 md:h-8" />
               </div>
               <div className="w-full">
-                <h4 className="text-lg md:text-xl font-bold text-brand-dark mb-2 md:mb-3">Completely free service</h4>
-                <p className="text-brand-gray leading-relaxed text-sm md:text-base">We recover all costs directly from the at-fault party's insurer, so you never pay a penny.</p>
+                <h4 className="text-lg md:text-xl font-bold text-brand-dark mb-2 md:mb-3">No Win No Fee</h4>
+                <p className="text-brand-gray leading-relaxed text-sm md:text-base">You only pay if we successfully recover your claim. Zero risk, complete peace of mind.</p>
               </div>
             </div>
 
