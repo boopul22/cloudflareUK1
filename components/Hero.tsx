@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
             <div className="flex flex-col gap-3 sm:gap-4 mb-6 sm:mb-8 md:mb-10">
               <div onClick={() => scrollToSection('contact')}>
                 <Button variant="accent" className="shadow-orange-500/20 px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base w-full sm:w-auto cursor-pointer">
-                  Begin Your Free Claim
+                  Register or Start Your Claim Now
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
                 </Button>
               </div>

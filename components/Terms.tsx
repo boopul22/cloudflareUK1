@@ -16,14 +16,14 @@ const Terms: React.FC = () => {
             <section>
               <h2 className="text-xl font-bold text-brand-dark mb-4">1. Introduction</h2>
               <p>
-                Welcome to Autoclaimfiling.online ("we," "our," or "us"). These Terms and Conditions govern your use of our website and our credit hire replacement vehicle referral service. By accessing our website or using our services, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our website or services.
+                Welcome to Online Motor Claims, operated by LRA Marketing Ltd ("we," "our," or "us"). These Terms and Conditions govern your use of our website and our credit hire replacement vehicle referral service. By accessing our website or using our services, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our website or services.
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-bold text-brand-dark mb-4">2. About Our Service</h2>
               <p className="mb-4">
-                Autoclaimfiling.online is a referral service that connects individuals who have been involved in non-fault road traffic accidents with credit hire companies and associated service providers in the United Kingdom. We help you access your legal right to a like-for-like replacement vehicle under UK law.
+                LRA Marketing Ltd is a referral service that connects individuals who have been involved in non-fault road traffic accidents with credit hire companies and associated service providers in the United Kingdom. We help you access your legal right to a like-for-like replacement vehicle under UK law.
               </p>
               <p>
                 <strong>Important:</strong> We are not a credit hire company, law firm, or insurance provider. We act as an intermediary to connect you with appropriate service providers. We do not provide legal, financial, or insurance advice.
@@ -44,7 +44,7 @@ const Terms: React.FC = () => {
               <h2 className="text-xl font-bold text-brand-dark mb-4">4. Marketing Communications Consent</h2>
               <p className="font-semibold mb-2">IMPORTANT: PLEASE READ CAREFULLY</p>
               <p className="mb-4">
-                By submitting your details through our website, you consent to be contacted by Autoclaimfiling.online and our trusted partner credit hire companies regarding your enquiry and related services.
+                By submitting your details through our website, you consent to be contacted by LRA Marketing Ltd and our trusted partner credit hire companies regarding your enquiry and related services.
               </p>
               <p className="mb-4">
                 In accordance with UK data protection law and the Privacy and Electronic Communications Regulations (PECR), we will only contact you with marketing communications where you have given your explicit consent. You may withdraw your consent at any time by contacting us at the details provided below or by using the unsubscribe option in any marketing communication.
@@ -75,7 +75,7 @@ const Terms: React.FC = () => {
             <section>
               <h2 className="text-xl font-bold text-brand-dark mb-4">7. Limitation of Liability</h2>
               <p className="mb-4">
-                To the fullest extent permitted by law, Autoclaimfiling.online shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our website or services.
+                To the fullest extent permitted by law, LRA Marketing Ltd shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our website or services.
               </p>
               <p>
                 Nothing in these Terms excludes or limits our liability for death or personal injury caused by our negligence, fraud, or any other liability that cannot be excluded or limited under English law.
@@ -85,7 +85,7 @@ const Terms: React.FC = () => {
             <section>
               <h2 className="text-xl font-bold text-brand-dark mb-4">8. Intellectual Property</h2>
               <p>
-                All content on this website, including text, graphics, logos, and images, is the property of Autoclaimfiling.online or our licensors and is protected by UK and international copyright laws. You may not reproduce, distribute, or use any content without our prior written permission.
+                All content on this website, including text, graphics, logos, and images, is the property of LRA Marketing Ltd or our licensors and is protected by UK and international copyright laws. You may not reproduce, distribute, or use any content without our prior written permission.
               </p>
             </section>
 
@@ -109,7 +109,7 @@ const Terms: React.FC = () => {
                 If you have any questions about these Terms, please contact us at:
               </p>
               <p>
-                <strong>Email:</strong> autoclaimfiling.uk@gmail.com
+                <strong>Email:</strong> help@lramarketing.co.uk
               </p>
             </section>
           </div>

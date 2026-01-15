@@ -13,10 +13,10 @@ const ContactForm: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
-  // FormSubmit.co endpoint for autoclaimfiling.uk@gmail.com (using secure hash)
+  // FormSubmit.co endpoint for help@lramarketing.co.uk (using secure hash)
   const FORMSUBMIT_URL = 'https://formsubmit.co/ajax/e4266fc982fdb1a764e34401d0224a97';
   const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbxnVc9uUi16uAKfHIqUATXEp_D3zNO2eoYN-xlKTl3RlwCeL9UBPH7irsGoXiFZDYeGkg/exec';
-  const EMAIL_SUBJECT = 'New Lead - Autoclaimfiling.online UK';
+  const EMAIL_SUBJECT = 'New Lead - LRA Marketing Ltd UK';
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({

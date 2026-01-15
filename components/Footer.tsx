@@ -34,8 +34,8 @@ const Footer: React.FC = () => {
               <Shield className="h-8 w-8 text-brand-primary" fill="currentColor" fillOpacity={0.2} />
               <span className="font-extrabold text-2xl tracking-tight">Online Motor <span className="text-brand-primary">Claims</span></span>
             </div>
-            <p className="text-gray-400 max-w-sm leading-relaxed mb-6">
-              We are dedicated to helping accident victims connect with the legal representation they deserve. Fast, fair, and free to start.
+            <p className="text-gray-400 text-sm max-w-2xl leading-relaxed mb-6">
+              LRA Marketing Ltd is a company registered in England & Wales with registration number 09558492. Authorised and registered with the ICO Number ZA000045. Any service provider that you consent to us sharing your information with is an independent Firm from whom you will receive impartial and confidential advice. It may be possible for you to present a claim yourself for free, either to the person against who you wish to make a claim or a relevant insurer.
             </p>
           </div>
 
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center gap-3 text-gray-400">
                 <Mail className="w-5 h-5 text-brand-primary" />
-                <span className="hover:text-white transition-colors cursor-pointer">autoclaimfiling.uk@gmail.com</span>
+                <span className="hover:text-white transition-colors cursor-pointer">help@lramarketing.co.uk</span>
               </li>
               <li className="flex items-start gap-3 text-gray-400">
                 <MapPin className="w-5 h-5 text-brand-primary mt-1" />
@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-          <p>© {new Date().getFullYear()} Online Motor Claims. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} LRA Marketing Ltd. All rights reserved.</p>
           <p>Not a law firm. Advertising service.</p>
         </div>
       </div>

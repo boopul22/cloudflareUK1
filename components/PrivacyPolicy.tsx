@@ -16,7 +16,7 @@ const PrivacyPolicy: React.FC = () => {
             <section>
               <h2 className="text-xl font-bold text-brand-dark mb-4">1. Introduction</h2>
               <p className="mb-4">
-                Autoclaimfiling.online ("we," "our," or "us") is committed to protecting your privacy and handling your personal data in accordance with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.
+                LRA Marketing Ltd ("we," "our," or "us") is committed to protecting your privacy and handling your personal data in accordance with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.
               </p>
               <p>
                 This Privacy Policy explains how we collect, use, store, and protect your personal information when you use our website and credit hire referral services.
@@ -26,7 +26,7 @@ const PrivacyPolicy: React.FC = () => {
             <section className="bg-blue-50 p-6 rounded-xl border border-blue-100">
               <h2 className="text-xl font-bold text-brand-dark mb-4">2. Data Controller</h2>
               <p>
-                For the purposes of UK GDPR, Autoclaimfiling.online is the data controller responsible for your personal data. If you have any questions about this Privacy Policy or how we handle your data, you can contact us at: <strong>autoclaimfiling.uk@gmail.com</strong>
+                For the purposes of UK GDPR, LRA Marketing Ltd is the data controller responsible for your personal data. If you have any questions about this Privacy Policy or how we handle your data, you can contact us at: <strong>help@lramarketing.co.uk</strong>
               </p>
             </section>
 
@@ -87,7 +87,7 @@ const PrivacyPolicy: React.FC = () => {
                 <li><strong>Right to Withdraw Consent:</strong> Withdraw your consent at any time where processing is based on consent</li>
               </ul>
               <p className="mt-4">
-                To exercise any of these rights, please contact us at <strong>autoclaimfiling.uk@gmail.com</strong>. We will respond to your request within one month.
+                To exercise any of these rights, please contact us at <strong>help@lramarketing.co.uk</strong>. We will respond to your request within one month.
               </p>
             </section>
 
@@ -141,7 +141,7 @@ const PrivacyPolicy: React.FC = () => {
                 If you have any questions about this Privacy Policy or wish to exercise your data protection rights, please contact us at:
               </p>
               <p>
-                <strong>Email:</strong> autoclaimfiling.uk@gmail.com
+                <strong>Email:</strong> help@lramarketing.co.uk
               </p>
             </section>
           </div>
