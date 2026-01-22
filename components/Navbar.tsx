@@ -58,9 +58,9 @@ const Navbar: React.FC = () => {
             <div className="h-6 w-px bg-gray-200"></div>
 
             <div className="flex items-center gap-4">
-              <a href="tel:8888761755" className="flex items-center gap-2 text-brand-dark font-bold hover:text-brand-primary transition-colors">
+              <a href="tel:08008761755" className="flex items-center gap-2 text-brand-dark font-bold hover:text-brand-primary transition-colors">
                 <Phone className="w-4 h-4" />
-                <span>888 876 1755</span>
+                <span>0800 876 1755</span>
               </a>
               <div onClick={() => handleNavClick('contact')}>
                 <Button variant="accent" className="!py-2 !px-5 text-xs cursor-pointer">
@@ -95,9 +95,9 @@ const Navbar: React.FC = () => {
                   Get Free Case Review
                 </Button>
               </div>
-              <a href="tel:8888761755" onClick={() => setIsOpen(false)}>
+              <a href="tel:08008761755" onClick={() => setIsOpen(false)}>
                 <Button fullWidth variant="primary">
-                  Call: 888 876 1755
+                  Call: 0800 876 1755
                 </Button>
               </a>
             </div>
