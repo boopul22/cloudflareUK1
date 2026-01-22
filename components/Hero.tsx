@@ -56,9 +56,9 @@ const Hero: React.FC = () => {
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
                 </Button>
               </div>
-              <a href="tel:08002465120" className="flex flex-col items-center sm:items-start group">
+              <a href="tel:8888761755" className="flex flex-col items-center sm:items-start group">
                 <span className="text-[10px] sm:text-xs font-bold text-gray-500 uppercase tracking-wider">Need Immediate Help?</span>
-                <span className="text-xl sm:text-2xl font-bold text-brand-dark group-hover:text-brand-primary transition-colors">0800 246 5120</span>
+                <span className="text-xl sm:text-2xl font-bold text-brand-dark group-hover:text-brand-primary transition-colors">888 876 1755</span>
               </a>
             </div>
 
