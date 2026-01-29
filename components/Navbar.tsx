@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
               <Shield className={`h-6 w-6 ${scrolled ? 'text-brand-primary' : 'text-brand-dark'}`} fill="currentColor" fillOpacity={0.2} />
             </div>
             <span className="font-extrabold text-lg sm:text-xl tracking-tight text-brand-dark">
-              Online Motor <span className="text-brand-primary">Claims</span>
+              Auto File <span className="text-brand-primary">Claim</span>
             </span>
           </Link>
 
@@ -58,10 +58,10 @@ const Navbar: React.FC = () => {
             <div className="h-6 w-px bg-gray-200"></div>
 
             <div className="flex items-center gap-4">
-              <a href="tel:08008620908" className="flex items-center gap-2 text-brand-dark font-bold hover:text-brand-primary transition-colors">
+              <div className="flex items-center gap-2 text-brand-dark font-bold hover:text-brand-primary transition-colors">
                 <Phone className="w-4 h-4" />
-                <span>0800 862 0908</span>
-              </a>
+                <span>[Insert Phone Number]</span>
+              </div>
               <div onClick={() => handleNavClick('contact')}>
                 <Button variant="accent" className="!py-2 !px-5 text-xs cursor-pointer">
                   Free Case Review
@@ -95,11 +95,11 @@ const Navbar: React.FC = () => {
                   Get Free Case Review
                 </Button>
               </div>
-              <a href="tel:08008620908" onClick={() => setIsOpen(false)}>
+              <div onClick={() => setIsOpen(false)}>
                 <Button fullWidth variant="primary">
-                  Call: 0800 862 0908
+                  Call: [Insert Phone Number]
                 </Button>
-              </a>
+              </div>
             </div>
           </div>
         </div>
